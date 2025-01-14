@@ -1,0 +1,16 @@
+showVerionsTab: false
+showEnvVarsTab: true
+allowAutoApplyLimits: false
+name: ustore-demo-template
+title: ustore-demo-template
+logo: null
+tags:
+  - demo
+  - helloworld
+  - http
+description: |-
+  Demo project template for U-store. 
+  It is a small http hello-world server
+oneDeploymentPerCluster: false
+notAllowRemoveNamespace: false
+autoAddEnvVarsToDeployments: true

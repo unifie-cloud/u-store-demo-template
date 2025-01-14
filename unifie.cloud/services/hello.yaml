@@ -1,4 +1,18 @@
 name: hello
 uiType: docker
 rules: []
-routes: []
+routes:
+  - host: '{{ .UnifieVar.deployment.domain }}'
+    http:
+      paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: hello
+              port:
+                number: 80
+monitoring:
+  - host: '{{ .deployment.domain }}'
+    path: /
+    timeout: 30000
